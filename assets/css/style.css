@@ -1,0 +1,101 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #202020;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.intro-text{
+    margin-top: 18%;
+    width: auto;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#highlight-name{
+    color: #5DD8FF;
+}
+
+#highlight-full-stack{
+    color: #FF791c;
+}
+
+#hello-world{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 2.5em;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.pad{
+    padding-top: .6em;
+}
+
+.whitespace{
+    margin: 23%;
+    width: 100%;
+}
+
+.header-container{
+    padding: 1.1%;
+    position: relative;
+    background-color: #303030;
+}
+
+.links{
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    display: inline-block;
+    font-size: 1.5em;
+    /*on hover border color white, medium thickness, rounded borders */
+}
+
+.about{
+    margin-top: 0%;
+    width: 100%;
+    position: relative;
+}
+
+#about-header{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    position: relative;
+    width: 100%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3em;
+    background-color: pink;
+    text-align: center;
+}
+
+#about-main{
+    position: relative;
+    margin-top: 5%;
+    margin-left: 5%;
+    background-color: teal;
+    max-width: 35%;
+    font-size: 2em;
+}
+
+#about-text{
+    font-size: 1.5em;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
