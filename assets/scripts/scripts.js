@@ -1,7 +1,8 @@
-/*var i = 0;
-var txt = 'Hello World.';
-var speed = 150;
+/*
+let i = 0;
 function typeWriter() {
+  var txt = "This is a test"
+  var speed = 150;
   if (i < txt.length) {
     document.getElementById("hello-world").innerHTML += txt.charAt(i);
     i++;
@@ -10,33 +11,24 @@ function typeWriter() {
 }
 */
 
-//    variable = [getElementById(""), getElementById(""),  ]etc...   use the foeEach() function, place variable instead of "hello-world" in typeWriter function
-/*
-var txt = {
-  hello: "Hello World."
-};
-divs = [document.getElementById("hello-world").innerHTML];
-function type(){
-  var i = 0;
-  for (var key in txt) {
-    if (txt.hasOwnProperty(key)) {
-      if(i < txt[key].length){
-        divs[0] += txt[key].charAt(i);
-        i++ 
-      }
-      
-    }
-  }
-}
-*/
+var $window = $(window);
+var $elem = $(".typeWrite")
 
-var nodes = document.querySelector('.intro-text').childNodes;
-console.log(nodes);
-for(var i = 1; i < nodes.length; i += 1){
-  var txts = nodes[i];
-  const content = txts.innerText;
-  if(content != '' || content != undefined){
-    console.log(content);
-   // console.log(content.length);
-  }
-}
+    function isScrolledIntoView($elem, $window) { //checking if element is in view
+        var docViewTop = $window.scrollTop();
+        var docViewBottom = docViewTop + $window.height();
+        var elemTop = $elem.offset().top;
+        var elemBottom = elemTop + $elem.height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
+
+$(document).on("scroll", function () {
+    if (isScrolledIntoView($elem, $window)) { //if the element is in view, typewrite animation
+      $elem.addClass("animateTypeWrite")
+      $elem.show()
+    }
+})
+
+console.log($(".typeWrite").text())
