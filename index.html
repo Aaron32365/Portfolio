@@ -2,99 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/b8e0758315.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto+Mono|Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>AaronWilliams.com</title>
 </head>
 <body>
-    <div class="clearfix">
-        <section class="intro">
-            <div class="intro-text">
-                <h1 id="hello-world" class="typeWrite">
-                    Hello World.
-                </h1>
-                <div class="pad">
-                My name is 
-                <span id="highlight-name">
-                    Aaron Williams
-                </span>
-                </div>
-                <div class="pad">
-                    I am a 
-                    <span id="highlight-full-stack">
-                        Full-Stack Web Developer
-                    </span>
-                </div>
-                <br>
-                <button class="btn-learn-more">
-                    Learn More 
-                </button>
-            </div>
-            <i>
-                <!--animation arrow bouncing up and down, pointing downwards - similiar to font type *pixelated*-->
-            </i>
-        </section>
+    <section class="row" id="intro-section">
+        <div class="col-sm-12" id="padding-top">
         </div>
-        <section class="whitespace">
-
-        </section>
-        <header class="header-container"> <!--Header-->
-            <nav class="link-wrap">
-                <ul>
-                    <li class="links" class="typeWrite">
-                       <a href="index.html#home">Home</a>
-                    </li>
-                    <li class="links">
-                        <a href="index.html#about">About</a>
-                    </li>
-                    <li class="links">
-                        <a href="index.html#portfolio">Portfolio</a><!--Possibly make Home/About on left side of page, Portfolio/Contact on right, centered-->
-                    </li>
-                    <li class="links">
-                        <a href="index.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    <section id="home">
-
-    </section>
-    <section class="about">
-        <header id="about-header">
-            <h1>
-               About 
+        <div class="col-sm-3" id="padding-left">
+        </div>
+        <div id="intro" class="col-sm-6">
+            <h1 class="typeWrite" id="intro-main" class="col-sm-12">
+                Hello World.
             </h1>
-        </header>
-        <header id="about-main-header">
-            Who Is Aaron?
-        </header>
-        <section id="about-main">
-            <div id="about-text-first">
-                I am a Full Stack Web Developer located in Sacramento, CA. Although I prefer to work on Back-end development, I still have a passion for front-end UX/UI.
-            </div>
-            <div id="about-text-second">
-                I am currently towards my BA in Computer Science. I have also attended UC Davis's Full-Stack programming Boot camp.
-            </div>
-            <div id="about-text-third">
-                I absolutely love learning new programming languages and concepts. Luckily I absorb information like a sponge!
-            </div>
-            <div id="about-text-fourth">
-                Some of my hobbies include: Programming fun projects, exercising, playing video games, and traveling.
-            </div>
-        </section>
-    </section>
-    <section id="portfolio">
-        <div>
+            <h3 class="intro-sub" class="col-sm-12">
+                My name is <span id="blue">Aaron Williams</span>
+                <br>
+                I am a <span id="orange">Full Stack</span> Web Developer. <br>
+                <a href="" id="learnMore">Learn more! <i class="fas fa-arrow-down"></i></a> 
+            </h3>
+        </div>
+        <div class="col-sm-3" id="padding-right">
 
         </div>
     </section>
-    <section id="contact">
-    
+    <div id="navbar">
+        <nav class="navbar sticky-top navbar-expand-lg" id="nav">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+    <section class="row">
+        <div class="col-sm-12" id="pad">
+        </div>
+        <div class="col-sm-1">
+        </div>
+        <div class="col-sm-3"  id="about-container">
+            <h1 class="col-sm-12">
+                About 
+            </h1>
+            I am a <span id="orange">Full</span> <span id="blue">Stack</span> Web Developer based in the Greater Sacramento area. I am a <span id="blue"> passionate </span> <span id="orange"> programmer</span> always looking for new opportunities to learn more and grow as a developer, and as a person. Most importantly, I am <span id="orange"> forever</span> a <span id="blue"> student</span>.
+        </div>
+        <div class="col-sm-3" id="test">
+            
+        </div>
+        <div class="col-sm-4" id="knowledge-Container">
+            <h1>What does <span id="blue">Aaron</span> <span id="orange">know</span>?</h1>
+            <div id="knowledge" class="icons">
+                <i class="fab fa-html5 fa-4x">Html5</i>
+                <i class="fab fa-css3-alt fa-4x">CSS3</i>
+                <i class="fab fa-js-square fa-4x">Javascript</i>
+                <i class="fab fa-java fa-4x">Java</i>
+                <i class="fab fa-node fa-3x">Node.js</i>
+                <i class="fab fa-react fa-4x">React</i>
+                <br>
+                <i class="fas fa-database fa-4x">Database Theory</i>
+                <span class="iconify" data-icon="simple-icons:mongodb" data-inline="false" style="font-size: 3em;"></span><span style="font-size: 2em;">MongoDB</span>
+                <i class="fab fa-github fa-3x">Git/Github</i>
+                <i class="fas fa-terminal fa-4x">Command Line</i> <br>
+                <span style="font-size: .7em;" style="text-align: center;">And the list continues to grow. . .</span>
+            </div>
+        </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="./assets/scripts/scripts.js"></script>
 </body>
 </html>

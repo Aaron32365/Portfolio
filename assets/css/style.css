@@ -1,15 +1,4 @@
-*{
-    
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-
 .animateTypeWrite {
-    display: none;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid white; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
@@ -17,8 +6,8 @@
     max-width: auto;
     letter-spacing: .20em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(22, end),
-      blink-caret .80s step-end infinite;
+      typing 3s steps(22, end),
+      blink-caret .70s step-end infinite;
   }
   
   /* The typing effect */
@@ -27,6 +16,7 @@
     to { width: 100% }
   }
   
+
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
@@ -34,106 +24,126 @@
   }
 
 
-
-
-
-
-
-
-
-a{
-    text-decoration: none;
+  *{
     color: white;
 }
-html{
-    scroll-behavior: smooth;
-}
 
-body{
-    background-color: #202020;
-    color: white;
-    font-family: 'Source Code Pro', monospace;
-}
-
-.intro-text{
-    margin-top: 18%;
-    width: auto;
-    text-align: center;
-    font-size: 1.8em;
-}
-
-#highlight-name{
-    color: #5DD8FF;
-}
-
-#highlight-full-stack{
-    color: #FF791c;
-}
-
-#hello-world{
-    font-family: 'Press Start 2P', cursive;
-    color: white;
-    font-size: 2.5em;
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-
-.pad{
-    padding-top: .6em;
-}
-
-.whitespace{
-    margin: 23%;
-    width: 100%;
-}
-
-.header-container{
-    padding: 1.1%;
-    position: relative;
-    background-color: #303030;
-}
-
-.links{
-    padding-left: 1.5%;
-    padding-right: 1.5%;
+.iconify {
     display: inline-block;
+    width: 78px; height: 78px;
+    }
+
+  #intro-section{
+      width: 100.77%;
+      color: white;
+  }
+
+  #padding-top{
+      height: 1px;
+  }
+  
+  #intro{
+      text-align: center;
+  }
+
+#intro #intro-main{
+    margin-top: -100px;
+    font-size: 4.5em;
+    font-family: 'Press Start 2P' ;
+}
+
+#blue{
+    color: #07A895;
+}
+#orange{
+    color: orange;
+}
+
+#intro .intro-sub{
+    margin-top: 26px;
+    line-height: 2em;
+    font-size: 2.3em;
+    font-family: 'Raleway' ;
+}
+
+
+#intro-section{
+    height: 920px;
+}
+
+
+#learnMore{
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 6px;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: .8em;
+}
+
+
+
+#nav{
+    background-color: #1D1D1D;
+}
+
+
+.navbar-nav .nav-link{
     font-size: 1.5em;
-    /*on hover border color white, medium thickness, rounded borders */
+    color: white;
 }
 
-.about{
-    margin-top: 0%;
-    width: 100%;
-    position: relative;
+#pad{
+    height: 156px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    margin-left: 3em;
 }
 
-#about-header{
-    padding-top: 3%;
-    padding-bottom: 3%;
-    position: relative;
-    width: 100%;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 3em;
-    background-color: pink;
-    text-align: center;
+.row{
+    background-color: black;
 }
 
-#about-main{
-    position: relative;
-    margin-top: 5%;
-    margin-left: 5%;
-    background-color: teal;
-    max-width: 35%;
-    font-size: 2em;
+.sticky-top {
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    position: -webkit-sticky; 
+    position: sticky;
 }
 
-#about-text{
-    font-size: 1.5em;
+#nav .stick-top{
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
 }
 
-.clearfix::after {
-    content: "";
-    display: block;
-    clear: both;
+#about-container{
+    line-height: 1.5em;
+    height: 375px;
+    font-size: 1.6em;
+    background-color: #1D1D1D;
+    padding: 24px;
+    border-style: solid;
+    border-radius: 16px;
+    border-width: 2px;
+    border-color: white;
+}
+
+
+
+#knowledge-Container{
+    background-color: #1D1D1D;
+    padding: 24px;
+    border-style: solid;
+    border-radius: 16px;
+    border-width: 2px;
+    border-color: white;
+    height: 1000px;
+}
+
+i{
+    margin: 20px;
 }
