@@ -28,13 +28,22 @@
     color: white;
 }
 
+.containers{
+    background-color: #1D1D1D;
+    padding: 24px;
+    border-style: solid;
+    border-radius: 16px; 
+    border-width: 2px;
+    border-color: white;
+}
+
 .iconify {
     display: inline-block;
     width: 78px; height: 78px;
     }
 
   #intro-section{
-      width: 100.77%;
+      height: 920px;
       color: white;
   }
 
@@ -52,10 +61,10 @@
     font-family: 'Press Start 2P' ;
 }
 
-#blue{
+.blue{
     color: #07A895;
 }
-#orange{
+.orange{
     color: orange;
 }
 
@@ -66,40 +75,25 @@
     font-family: 'Raleway' ;
 }
 
-
-#intro-section{
-    height: 920px;
-}
-
-
 #learnMore{
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
-    border-radius: 6px;
-    padding: 8px;
+    border-radius: 8px;
+    padding: 12px;
     color: white;
     text-decoration: none;
     font-size: .8em;
 }
 
-
-
-#nav{
-    background-color: #1D1D1D;
-}
-
-
 .navbar-nav .nav-link{
+    margin-top: -14px;
+    padding-top: 0px;
+    padding-bottom: 16px;
+    text-align: center;
     font-size: 1.5em;
     color: white;
 }
 
-#pad{
-    height: 156px;
-}
-.navbar-expand-lg .navbar-nav .nav-link{
-    margin-left: 3em;
+.pad{
+    height: 200px;
 }
 
 .row{
@@ -107,43 +101,87 @@
 }
 
 .sticky-top {
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
+    border-radius: 0px;
     position: -webkit-sticky; 
     position: sticky;
+    top: 0;
 }
 
-#nav .stick-top{
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
+#about{
+    padding-left: 12px;
 }
 
 #about-container{
-    line-height: 1.5em;
-    height: 375px;
+    line-height: 1.7em;
+    height: 392px;
     font-size: 1.6em;
-    background-color: #1D1D1D;
-    padding: 24px;
-    border-style: solid;
-    border-radius: 16px;
-    border-width: 2px;
-    border-color: white;
+    font-family: 'Raleway' ;
 }
 
-
+#knowledge-header hr{
+    width: 300px;
+}
 
 #knowledge-Container{
-    background-color: #1D1D1D;
     padding: 24px;
-    border-style: solid;
-    border-radius: 16px;
-    border-width: 2px;
-    border-color: white;
-    height: 1000px;
+    height: 640px;
 }
 
+
 i{
-    margin: 20px;
+    margin-left: 16px;
+    margin-top: 32px;
+}
+
+.arrow {
+    margin-left: 0;
+    margin-top: 12px;
+    text-align: center;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: linear;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+#portfolio-section{
+    background-color: #0B0B0B;
+}
+
+#portfolio-container{
+    margin-top: 86px;
+    min-height: 800px;
+    border-radius: 8px;
+}
+
+.headers{
+    text-align: center;
+    font-family: 'Press Start 2P' ;
+}
+
+#portfolio-header hr{
+    width: 396px;
+}
+
+.headers hr{
+    margin-top: 12px;
+    border: 2px solid white;
+    width: 245px;
+}
+
+#test{
+    background-color: red;
+}
+
+#portfolio{
+    background-color: #1D1D1D;
+    height: 600px;
 }

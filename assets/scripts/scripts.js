@@ -28,8 +28,7 @@ if(isScrolledIntoView($(".intro-sub"), $window)){
 
 */
 
-console.log($(".intro-sub").text())
-
+console.log($(".intro-sub").text()) 
 
 ///////// a new begenning ////////
 
@@ -54,3 +53,8 @@ printSentence(
   40
 );
 console.log($("#intro").text())
+
+$(document).on('click', $("#more-about"), event =>{
+  event.preventDefault()
+  
+})
