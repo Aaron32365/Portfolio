@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link rel="stylesheet" href="./assets/font-mfizz-2.4.1//font-mfizz.css">
     <script src="https://kit.fontawesome.com/b8e0758315.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -27,7 +27,7 @@
                 My name is <span class="blue">Aaron Williams</span>
                 <br>
                 I am a <span class="orange">Full Stack</span> Web Developer. <br>
-                <a href="#" class="containers" id="learnMore">Learn more! <i class="arrow bounce fas fa-arrow-down"></i></a> 
+                <a href="#about-section" class="containers" id="learnMore">Learn more! <i class="arrow bounce fas fa-arrow-down"></i></a> 
             </h3>
         </div>
         <div class="col-sm-3" id="padding-right">
@@ -37,16 +37,16 @@
         <nav class="navbar sticky-top navbar-expand-lg containers"  id="nav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                <a class="nav-link" href="#">Home<i class="fas fa-home"></i> </a>
+                <a class="nav-link" id="nav-1" href="#">Home<i class="fas fa-home"></i></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">About <i class="fas fa-portrait"></i></a>
+                <a class="nav-link" id="nav-2" href="#">About <i class="fas fa-portrait"></i></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Portfolio <i class="fas fa-archive"></i></a>
+                <a class="nav-link" id="nav-3" href="#">Portfolio <i class="fas fa-archive"></i></a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Contact <i class="fas fa-id-card"></i></a>
+                <a class="nav-link" id="nav-4" href="#">Contact <i class="fas fa-id-card"></i></a>
                 </li>
             </ul>
             </div>
@@ -54,12 +54,14 @@
     <section class="row" id="about-section">
         <div class="col-sm-12 pad">
         </div>
+        <div class="col-sm-12" id="marker1">
+            
+        </div>
         <div class="col-sm-1">
         </div>
         <div class="col-sm-4 containers"  id="about-container">
-            <h1 class="col-sm-12 headers">
-                About
-                <hr>
+            <h1 class="col-sm-12 headers" id="about-header">
+                About<hr>
             </h1>
             <div id="about">
                 I am a <span class="orange">Full</span> <span class="blue">Stack</span> Web Developer based in the Greater Sacramento area. I am a <span class="blue"> passionate </span> <span class="orange"> programmer</span> always looking for new opportunities to learn more and grow as a developer, and as a person. Most importantly, I am <span class="orange"> forever</span> a <span class="blue"> student</span>.
@@ -74,18 +76,16 @@
                 Skills
                 <hr>
             </h1> 
-            <!-- add underline under headers -->
             <div id="knowledge" class="icons">
-                <i class="fab fa-html5 fa-3x"> Html5</i>
-                <i class="fab fa-css3-alt fa-3x"> CSS3</i>
-                <i class="fab fa-java fa-3x"> Java</i>
-                <i class="fab fa-node fa-3x"> Node.js</i>
-                <i class="fab fa-react fa-3x"> React</i>
-                <span class="iconify" data-icon="simple-icons:mongodb" data-inline="false" style="font-size: 2em;"></span><span style="font-size: 2em;">MongoDB</span>
-                <i class="fab fa-git-alt fa-3x"> Git</i>
-                <i class="fab fa-js-square fa-3x"> Javascript</i>
-                <i class="fas fa-database fa-3x"> Database Theory</i>
-                <i class="fas fa-terminal fa-3x"> Command Line</i> <br>
+                <i class="fab fa-html5 fa-3x blue"></i><span style="font-size: 2.8em;">  HTML5</span>
+                <i class="fab fa-css3-alt fa-3x orange"></i><span style="font-size: 2.8em;">  CSS3</span> <br>
+                <i class="fab fa-java fa-3x orange"></i><span style="font-size: 2.8em;">  Java</span>
+                <i class="fab fa-node fa-3x blue"></i><span style="font-size: 2.8em;">  Node.js</span>
+                <i class="fab fa-react fa-3x blue"></i><span style="font-size: 2.8em;">  React</span>
+                <i class="icon-mongodb" style="color:orange; font-size: 3.6em; margin-left: -2px;"></i><span style="font-size: 2.4em;">  MongoDB</span>
+                <i class="fab fa-git-alt fa-3x orange"></i><span style="font-size: 2.8em;"> Git</span>
+                <i class="fab fa-js-square fa-3x blue"></i><span style="font-size: 2.8em;"> Javascript</span>
+                <i class="fas fa-terminal fa-3x blue"></i><span style="font-size: 2.9em;"> Command Line</span>
             </div>
         </div>
         <div class="col-sm-12 pad">

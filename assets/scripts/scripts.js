@@ -1,6 +1,5 @@
-/*
+
 var $window = $(window);
-var $elem = $(".typeWrite")
 
     function isScrolledIntoView($elem, $window) { //checking if element is in view
         var docViewTop = $window.scrollTop();
@@ -11,26 +10,24 @@ var $elem = $(".typeWrite")
         return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
     }
 
-
-$(document).on("scroll", function () {
-    if (isScrolledIntoView($elem, $window)) { //if the element is in view, typewrite animation
-      $elem.addClass("animateTypeWrite")
-    }
+$(document).on("load", $("#intro-section"),(event) => {
+  event.preventDefault()
+  $("#intro").removeAttr("display: none")
 })
-console.log($(".intro-sub"))
 
-if(isScrolledIntoView($(".intro-sub"), $window)){
-  setTimeout(function(){
-    $(".intro-sub").addClass("animateTypeWrite")
-  }, 4000)
-}
+let scrolled = false
+$(document).on("scroll", $("#marker1"), function(event){
+  event.preventDefault()
+  if(isScrolledIntoView($("#marker1"), $window) && scrolled === false){
+      printSentence('about', $("#about").html(), 38)
+    scrolled = true
+  }
+})
 
 
-*/
-
-console.log($(".intro-sub").text()) 
-
-///////// a new begenning ////////
+$(document).on("click",$("#learnMore"),() => {
+  $("#about-section").scrollIntoView()
+})
 
 function printSentence(id, sentence, speed) {
   var index = 0,
@@ -50,7 +47,7 @@ function printSentence(id, sentence, speed) {
 printSentence(
   'intro',
   $("#intro").html(),
-  40
+  38
 );
 console.log($("#intro").text())
 

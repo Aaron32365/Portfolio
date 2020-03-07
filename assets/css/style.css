@@ -1,13 +1,12 @@
 .animateTypeWrite {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid white; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    margin-left: 0; /* Gives that scrolling effect as the typing happens */
     max-width: auto;
     letter-spacing: .20em; /* Adjust as needed */
     animation: 
-      typing 3s steps(22, end),
-      blink-caret .70s step-end infinite;
+      typing 2s steps(22, end),
+      blink-caret .70s step-end 0s;
   }
   
   /* The typing effect */
@@ -16,13 +15,23 @@
     to { width: 100% }
   }
   
+  #nav{
+      min-height: 80px;
+  }
 
-  /* The typewriter cursor effect */
+  body{
+      background-color: black;
+  }
+
+  /* The typewriter cursor effect
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: white; }
+  } */
+  html {
+    scroll-behavior: smooth;
   }
-
+  
 
   *{
     color: white;
@@ -37,15 +46,11 @@
     border-color: white;
 }
 
-.iconify {
-    display: inline-block;
-    width: 78px; height: 78px;
-    }
-
   #intro-section{
       height: 920px;
       color: white;
   }
+
 
   #padding-top{
       height: 1px;
