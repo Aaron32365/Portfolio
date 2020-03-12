@@ -1,20 +1,3 @@
-.animateTypeWrite {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin-left: 0; /* Gives that scrolling effect as the typing happens */
-    max-width: auto;
-    letter-spacing: .20em; /* Adjust as needed */
-    animation: 
-      typing 2s steps(22, end),
-      blink-caret .70s step-end 0s;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
   #nav{
       min-height: 80px;
   }
