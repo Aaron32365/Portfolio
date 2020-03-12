@@ -8,12 +8,12 @@ printSentence(
   38
 );
 
-$(document).on("load", $("#intro-section"),(event) => {
+$(document).on("load", "#intro-section",(event) => {
   event.preventDefault()
   $("#intro").removeAttr("display: none")
 })
 
-$(document).on("scroll", $("#marker1"), function(event){
+$(document).on("scroll", "#marker1", function(event){
   event.preventDefault()
   if(isScrolledIntoView($("#marker1"), $window) && scrolled === false){
       printSentence('about-main', $("#about-main").html(), 38)
@@ -21,12 +21,11 @@ $(document).on("scroll", $("#marker1"), function(event){
   }
 })
 
-$(document).on("click", $("#learnMore"),function(event){
+$(document).on("click", "#learnMore",function(event){
   event.preventDefault()
   let el = document.getElementById("about-section");
   el.scrollIntoView()
 })
-
 
 $(".nav-link").on("click", function(event){
   event.preventDefault()

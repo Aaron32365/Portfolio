@@ -3,14 +3,10 @@
   }
 
   body{
+      overflow-x: hidden;
       background-color: black;
   }
 
-  /* The typewriter cursor effect
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: white; }
-  } */
   html {
     scroll-behavior: smooth;
   }  
