@@ -30,11 +30,14 @@
   } */
   html {
     scroll-behavior: smooth;
-  }
-  
+  }  
 
-  *{
+*{
     color: white;
+}
+
+#more-about-content{
+    display: none;
 }
 
 .containers{
@@ -46,7 +49,7 @@
     border-color: white;
 }
 
-  #intro-section{
+  #home-section{
       height: 920px;
       color: white;
   }
@@ -112,7 +115,7 @@
     top: 0;
 }
 
-#about{
+#about-main{
     padding-left: 12px;
 }
 
@@ -186,7 +189,7 @@ i{
     background-color: red;
 }
 
-#portfolio{
+#portfolio-items{
     background-color: #1D1D1D;
     height: 600px;
 }
