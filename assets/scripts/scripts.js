@@ -1,40 +1,67 @@
+//global variable declarations
+///////////////////////////////////////////////////////////
 const $window = $(window);
 const nav = $(".nav-link")
 let scrolled = false
+///////////////////////////////////////////////////////////
 
+
+//when page loads, begin typewrite animation for intro-section
+///////////////////////////////////////////////////////////
 printSentence(
   'intro',
   $("#intro").html(),
   38
 );
+///////////////////////////////////////////////////////////
 
-$(document).on("load", "#intro-section",(event) => {
-  event.preventDefault()
-  $("#intro").removeAttr("display: none")
-})
-
-$(document).on("scroll", "#marker1", function(event){
-  event.preventDefault()
+//activates typwrite animation for about-section on view
+///////////////////////////////////////////////////////////
+document.onscroll = function(){
   if(isScrolledIntoView($("#marker1"), $window) && scrolled === false){
-      printSentence('about-main', $("#about-main").html(), 38)
-      scrolled = true
-  }
-})
+        printSentence('about-main', $("#about-main").html(), 38)
+        scrolled = true
+    }
+}
+///////////////////////////////////////////////////////////
 
-$(document).on("click", "#learnMore",function(event){
+
+//Displays additional "About" information on button click 
+///////////////////////////////////////////////////////////
+$(document).on("click", "#more-about", function(event){
+  event.preventDefault()
+  $("#more-about").attr("style", "display: none")
+  $("#about-container").attr("style", "height: auto")
+  printSentence("more-about-content", $("#more-about-content").html(), 40)
+  $("#more-about-content").attr("style", "display: inline")
+})
+///////////////////////////////////////////////////////////
+
+
+
+// controls Intro "Learn More" button functionality
+///////////////////////////////////////////////////////////
+$(document).on("click", "#learnMore", function(event){
   event.preventDefault()
   let el = document.getElementById("about-section");
   el.scrollIntoView()
 })
+///////////////////////////////////////////////////////////
 
+
+//controls navbar links functionality
+///////////////////////////////////////////////////////////
 $(".nav-link").on("click", function(event){
   event.preventDefault()
   let el = document.getElementById(`${$(this)[0].id}-section`)
-  console.log(el)
   el.scrollIntoView()
 })
+///////////////////////////////////////////////////////////
 
-function isScrolledIntoView($elem, $window) { //checking if an element is in view
+
+//function for checking if an element is within device view
+///////////////////////////////////////////////////////////
+function isScrolledIntoView($elem, $window) {
     var docViewTop = $window.scrollTop();
     var docViewBottom = docViewTop + $window.height();
     var elemTop = $elem.offset().top;
@@ -42,6 +69,9 @@ function isScrolledIntoView($elem, $window) { //checking if an element is in vie
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
 
+
+//typewriting animation function
+///////////////////////////////////////////////////////////
 function printSentence(id, sentence, speed) {
   var index = 0,
       timer = setInterval(function() {
@@ -55,3 +85,4 @@ function printSentence(id, sentence, speed) {
     }
   }, speed);
 } 
+///////////////////////////////////////////////////////////

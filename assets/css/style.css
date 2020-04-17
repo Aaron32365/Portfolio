@@ -15,10 +15,6 @@
     color: white;
 }
 
-#more-about-content{
-    display: none;
-}
-
 .containers{
     background-color: #1D1D1D;
     padding: 24px;
@@ -29,7 +25,7 @@
 }
 
   #home-section{
-      height: 920px;
+      height: 980px;
       color: white;
   }
 
@@ -94,6 +90,10 @@
     top: 0;
 }
 
+.tall{
+    height: 600px;
+}
+
 #about-main{
     padding-left: 12px;
 }
@@ -104,6 +104,12 @@
     font-size: 1.6em;
     font-family: 'Raleway' ;
 }
+
+#more-about-content{
+    padding-left: 12px;
+    display: none;
+}
+
 
 #knowledge-header hr{
     width: 300px;
@@ -172,3 +178,9 @@ i{
     background-color: #1D1D1D;
     height: 600px;
 }
+
+.hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+ }
