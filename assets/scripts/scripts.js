@@ -86,3 +86,33 @@ function printSentence(id, sentence, speed) {
   }, speed);
 } 
 ///////////////////////////////////////////////////////////
+
+generatePortfolio()
+
+function generatePortfolio(){
+  var container = $("#portfolio-items")
+
+  var itemList = [{
+    title: "Weather Dashboard",
+    imgUrl: "assets/imgs/weather-outlook.PNG",
+    title: "Weather Dashboard",
+    description: "test description"
+  }]
+
+  for(let i = 0; i < itemList.length; i++){
+    let div = $("<div>")
+    let imgDiv = $("<div>")
+    let descDiv = $("<div>")
+
+    div.addClass("portfolio-item row")
+    imgDiv.addClass("portfolio-imgs col-sm-4")
+    descDiv.addClass("portfolio-desc col-sm-7")
+    
+    descDiv.html(`Title: ${itemList[i].title} <br> Description: ${itemList[i].description}`)
+    imgDiv.attr("style", `background-image: url(${itemList[i].imgUrl})`)
+
+    div.append(imgDiv)
+    div.append(descDiv)
+    container.append(div)
+  }
+}

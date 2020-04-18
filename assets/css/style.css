@@ -100,7 +100,8 @@
 
 #about-container{
     line-height: 1.7em;
-    height: 392px;
+    min-height: 380px;
+    height: fit-content;
     font-size: 1.6em;
     font-family: 'Raleway' ;
 }
@@ -176,11 +177,29 @@ i{
 
 #portfolio-items{
     background-color: #1D1D1D;
-    height: 600px;
 }
 
-.hide {
-    position: absolute !important;
-    top: -9999px !important;
-    left: -9999px !important;
- }
+
+.portfolio-item{
+    min-height: 280px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-top: 28px;
+    height: fit-content;
+}
+
+.portfolio-imgs{
+    border-style: solid;
+    border-radius: 3px;
+    border-color: white;
+    border-width: 2px;
+    margin: 22px;
+    min-height: 240px;
+    background-size: 100% 100%;
+}
+
+.portfolio-desc{
+    margin-top: 20px;
+}
