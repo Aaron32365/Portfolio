@@ -11,15 +11,15 @@ let scrolled = false
 printSentence(
   'intro',
   $("#intro").html(),
-  38
+  32
 );
 ///////////////////////////////////////////////////////////
 
 //activates typwrite animation for about-section on view
 ///////////////////////////////////////////////////////////
 document.onscroll = function(){
-  if(isScrolledIntoView($("#marker1"), $window) && scrolled === false){
-        printSentence('about-main', $("#about-main").html(), 38)
+  if(isScrolledIntoView($("#marker1"), $window) && scrolled === false){ //create a second marker for typewrite animation
+        printSentence('about-main', $("#about-main").html(), 32)
         scrolled = true
     }
 }
@@ -32,7 +32,7 @@ $(document).on("click", "#more-about", function(event){
   event.preventDefault()
   $("#more-about").attr("style", "display: none")
   $("#about-container").attr("style", "height: auto")
-  printSentence("more-about-content", $("#more-about-content").html(), 40)
+  printSentence("more-about-content", $("#more-about-content").html(), 32)
   $("#more-about-content").attr("style", "display: inline")
 })
 ///////////////////////////////////////////////////////////
@@ -95,7 +95,6 @@ function generatePortfolio(){
   var itemList = [{
     title: "Weather Dashboard",
     imgUrl: "assets/imgs/weather-outlook.PNG",
-    title: "Weather Dashboard",
     description: "test description"
   }]
 
@@ -108,7 +107,7 @@ function generatePortfolio(){
     imgDiv.addClass("portfolio-imgs col-sm-4")
     descDiv.addClass("portfolio-desc col-sm-7")
     
-    descDiv.html(`Title: ${itemList[i].title} <br> Description: ${itemList[i].description}`)
+    descDiv.html(`<h2> ${itemList[i].title} </h2> <br> Description: ${itemList[i].description}`)
     imgDiv.attr("style", `background-image: url(${itemList[i].imgUrl})`)
 
     div.append(imgDiv)
