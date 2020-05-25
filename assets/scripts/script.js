@@ -95,22 +95,54 @@ function generatePortfolio(){
   var itemList = [{
     title: "Weather Dashboard",
     imgUrl: "assets/imgs/weather-outlook.PNG",
-    description: "test description"
+    githubUrl: "https://github.com/Aaron32365/Weather-Dashboard",
+    applicationUrl: "https://aaron32365.github.io/Weather-Dashboard/",
+    description: "Plan ahead and check out the local weather for any city using API calls"
+  },{
+    title: "Weather Dashboard",
+    imgUrl: "assets/imgs/weather-outlook.PNG",
+    githubUrl: "https://github.com/Aaron32365/Weather-Dashboard",
+    applicationUrl: "https://aaron32365.github.io/Weather-Dashboard/",
+    description: "Plan ahead and check out the local weather for any city using API calls"
+
+  },{
+    title: "Weather Dashboard",
+    imgUrl: "assets/imgs/weather-outlook.PNG",
+    githubUrl: "https://github.com/Aaron32365/Weather-Dashboard",
+    applicationUrl: "https://aaron32365.github.io/Weather-Dashboard/",
+    description: "Plan ahead and check out the local weather for any city using API calls"
+  },{
+    
+    title: "Weather Dashboard",
+    imgUrl: "assets/imgs/weather-outlook.PNG",
+    githubUrl: "https://github.com/Aaron32365/Weather-Dashboard",
+    applicationUrl: "https://aaron32365.github.io/Weather-Dashboard/",
+    description: "Plan ahead and check out the local weather for any city using API calls"
   }]
 
   for(let i = 0; i < itemList.length; i++){
     let div = $("<div>")
     let imgDiv = $("<div>")
     let descDiv = $("<div>")
+    let buttons = $("<div class='col-sm-12 buttons'>")
+    let githubButton = $(`<a target="_blank" href="${itemList[i].githubUrl}">`)
+    let applicationButton = $(`<a target="_blank" href="${itemList[i].applicationUrl}">`)
 
     div.addClass("portfolio-item row")
     imgDiv.addClass("portfolio-imgs col-sm-4")
     descDiv.addClass("portfolio-desc col-sm-7")
+    githubButton.addClass("portfolio-button githubButton")
+    applicationButton.addClass("portfolio-button appButton")
     
-    descDiv.html(`<h2> ${itemList[i].title} </h2> <br> Description: ${itemList[i].description}`)
-    imgDiv.attr("style", `background-image: url(${itemList[i].imgUrl})`)
+    githubButton.html(`Github`)
+    applicationButton.html(`Application`)
 
+    descDiv.html(`<h2> ${itemList[i].title} </h2> <br> ${itemList[i].description} <br>`)
+    imgDiv.attr("style", `background-image: url(${itemList[i].imgUrl})`)
     div.append(imgDiv)
+    buttons.append(githubButton)
+    buttons.append(applicationButton)
+    descDiv.append(buttons)
     div.append(descDiv)
     container.append(div)
   }

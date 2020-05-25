@@ -31,7 +31,7 @@
             </h3>
         </div>
         <div class="col-sm-3" id="padding-right">
-
+            
         </div>
     </section>
     <nav class="navbar sticky-top navbar-expand-lg containers"  id="nav">
@@ -140,16 +140,17 @@
                         <div class="col-sm-1">
 
                         </div>
-                        <div class="col-sm-5">
-                            <form>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                                </div>
+                        <div class="col-sm-12 form-container">
+                            <form class="form-group">
+                            <label for="nameInput" class="col-sm-4">Name</label>
+                            <label for="emailInput" class="col-sm-4">Email</label>
+                            <!-- <form class="form-group"> -->
+                                <input type="text" class="col-sm-4 form-control" id="nameInput" aria-describedby="emailHelp" placeholder="John Doe">
+                                <input type="text" class="col-sm-4 form-control" id="emailInput" aria-describedby="emailHelp" placeholder="John Doe">
+                                <label for="emailInput" class="col-sm-4">Message</label>
+                                <input type="text" class="col-sm-11 form-control" id="messageInput">
+                                <input type="submit" id="emailBtn" value="Send">
                             </form>
-                        </div>
-                        <div class="col-sm-5">
-                            name
                         </div>
                         <div class="col-sm-1">
 
@@ -160,8 +161,8 @@
                 </div>
                 <div class="col-sm-2">
                     <img src="./assets/imgs/img of self.jpg" alt="Image of Aaron Williams" style="border-style: solid; width: fit-content; height: fit-content; border-color: white; border-radius: 200px; border-width: 2px;">
-                    <div class="containers" style="min-width: 400px; margin-top: 24px; background-color: black;">
-                        I am currently available for freelance and job opportunities. Please feel free to reach out to me with any questions. Thank you!
+                    <div class="containers" id="" style="min-width: 400px; font-size: 1.25em; margin-top: 24px; background-color: black;">
+                        I am currently available for freelance opportunities. Please feel free to reach out to me with any questions. Thank you!
                     </div>
                 </div>
             </div>

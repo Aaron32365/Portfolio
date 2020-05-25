@@ -12,9 +12,18 @@
   }  
 
 *{
+    font-family: 'Raleway' ;
     color: white;
 }
 
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+a:hover{
+    text-decoration: none !important;
+    
+}
 .containers{
     background-color: #1D1D1D;
     padding: 24px;
@@ -177,6 +186,9 @@ i{
 
 #portfolio-items{
     background-color: #1D1D1D;
+    max-height: 675px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 
@@ -202,4 +214,94 @@ i{
 
 .portfolio-desc{
     margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.portfolio-button{
+    opacity: 1;
+    padding-bottom: 2px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 1.35em;
+    background-color: #242424;
+    text-align: center;
+    border-style: solid;
+    border-radius: 18px;
+    border-width: 2px;
+    border-color: white;
+}
+
+.buttons{
+    padding-top: 40px;
+}
+
+.githubButton{
+    color: #07A895 !important;
+}
+
+.githubButton:hover{
+    opacity: .8;
+}
+
+.appButton{
+    margin-left: 10px;
+    color: orange !important;
+}
+
+.appButton:hover{
+    opacity: .8;
+}
+
+::-webkit-scrollbar{
+    color: grey;
+    width: 6px;
+}
+
+.form-group {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  .form-group label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  .form-group input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 18px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+
+  .form-container{
+      margin-left: 24px;
+  }
+
+  label{
+      font-size: 1.3em;
+  }
+
+  #messageInput{
+      overflow: auto;
+      padding-top: 28px;
+      padding-bottom: 200px;
+  }
+
+#emailBtn{
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    padding-left: 48px;
+    padding-right: 48px;
+    border-width: 2px;
+    border-radius: 3px;
+    opacity: 1;
+    background-color: #242424;
+}
+
+#emailBtn:hover{
+    color: orange;
+    opacity: .8;
 }
