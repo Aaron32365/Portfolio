@@ -24,6 +24,79 @@ a:hover{
     text-decoration: none !important;
     
 }
+/* media queries */
+
+@media screen and (max-width: 480px) {
+    #intro #intro-main{
+        font-size: 2em !important;
+    }
+    #intro-sub{
+        font-size: 1.8em !important;
+    }
+  }
+
+  @media screen and (max-width: 530px) {
+    #intro #intro-main{
+        font-size: 2em !important;
+    }
+    #intro-sub{
+        font-size: 1.8em !important;
+    }
+  }
+
+
+@media screen and (min-width: 481px) {
+    #intro #intro-main{
+        font-size: 2em !important;
+    }
+    #intro-sub{
+        font-size: 2.2em !important;
+    }
+  }
+
+  @media screen and (min-width: 576px) {
+    #intro #intro-main{
+        margin-top: 100px !important;
+        font-size: 2.2em !important;
+    }
+    #intro-sub{
+        font-size: 1.8em !important;
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    #intro #intro-main{
+        margin-top: 100px !important;
+        font-size: 2.2em;
+    }
+    #intro-sub{
+        font-size: 1.8em !important;
+    }
+    
+  }
+
+  @media screen and (min-width: 768px) {
+    #intro #intro-main{
+        font-size: 3.2em !important;
+    }
+    #intro-sub{
+        font-size: 2.8em !important;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    #intro #intro-main{
+        font-size: 3.6em !important;
+    }
+  }
+
+  @media screen and (max-width: 590px) {
+    i{
+        size: 100% !important;
+    }
+  }
+
+
 .containers{
     background-color: #1D1D1D;
     padding: 24px;
@@ -60,7 +133,7 @@ a:hover{
     color: orange;
 }
 
-#intro .intro-sub{
+#intro #intro-sub{
     margin-top: 26px;
     line-height: 2em;
     font-size: 2.3em;

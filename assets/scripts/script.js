@@ -25,6 +25,16 @@ document.onscroll = function(){
 }
 ///////////////////////////////////////////////////////////
 
+// $window.resize(function(){
+//   if(window.innerWidth < 588) {
+//     console.log('test')
+//       let elements = document.getElementsByClassName("nav-link")
+//       for(let i = 0; i < elements.length; i++){
+//         elements[i].innerHTML = ""
+//       }
+
+//   }
+// });
 
 //Displays additional "About" information on button click 
 ///////////////////////////////////////////////////////////
