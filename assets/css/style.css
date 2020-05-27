@@ -72,7 +72,6 @@ a:hover{
     #intro-sub{
         font-size: 1.8em !important;
     }
-    
   }
 
   @media screen and (min-width: 768px) {
@@ -158,7 +157,7 @@ a:hover{
 }
 
 .pad{
-    height: 200px;
+    height: 170px;
 }
 
 .row{
@@ -193,20 +192,47 @@ a:hover{
     display: none;
 }
 
-
-#knowledge-header hr{
-    width: 300px;
-}
-
 #knowledge-Container{
+    min-height: 450px;
+    max-height: 475px;
     padding: 24px;
-    height: 640px;
 }
 
+#knowledge{
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 2px;
+    min-height: 300px;
+    max-height: 300px;
+    overflow: scroll;
+}
+
+.fab:hover{
+    background-color: #2F2F2F;
+}
+
+.fab{
+    padding: 10px;
+    border-radius: 8px;
+
+}
 
 i{
     margin-left: 16px;
     margin-top: 32px;
+}
+
+.skillsText{
+    display: none;
+}
+
+#skillsTextContainer{
+    max-height: fit-content;
+    font-family: 'Press Start 2P' ;
+    letter-spacing: 6px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .arrow {
@@ -239,18 +265,11 @@ i{
 }
 
 .headers{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: white;
     text-align: center;
     font-family: 'Press Start 2P' ;
-}
-
-#portfolio-header hr{
-    width: 396px;
-}
-
-.headers hr{
-    margin-top: 12px;
-    border: 2px solid white;
-    width: 245px;
 }
 
 #test{
@@ -327,7 +346,7 @@ i{
 
 ::-webkit-scrollbar{
     color: grey;
-    width: 6px;
+    width: 0px;
 }
 
 .form-group {  

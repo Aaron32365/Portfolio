@@ -25,16 +25,69 @@ document.onscroll = function(){
 }
 ///////////////////////////////////////////////////////////
 
-// $window.resize(function(){
-//   if(window.innerWidth < 588) {
-//     console.log('test')
-//       let elements = document.getElementsByClassName("nav-link")
-//       for(let i = 0; i < elements.length; i++){
-//         elements[i].innerHTML = ""
-//       }
 
+// $(".fab").on("mouseover", ()=> {
+//   let $elements = $(".fab")
+//   for(let i = 0; i < $elements.length; i++) {
+//     let $el = $elements[i]
+//     console.log($el)
+//     // if($el.is(":hover") ){
+//       // if($(".fab:hover").length != 0){
+//       //   console.log("red")
+//       // }
+//     // }
 //   }
-// });
+// })
+
+
+
+$(document).ready(function(){
+  let hovered = false
+  let $elements = $(".fab")
+  let div = $("#skillsTextContainer")
+
+  $elements.mouseover(function() {
+    div.text(`${$(this)[0].firstChild.innerHTML}`)
+  })
+  $elements.mouseout(function(){
+    div.text("")
+  })
+})
+
+
+
+
+//navbar control for mobile screens
+//////////////////////////////////////////////////////////////
+let resized = false
+$window.resize(function(){
+  if(window.innerWidth < 588 && resized === false) {
+    resized = true
+    console.log('test')
+      let elements = document.getElementsByClassName("nav-link")
+      for(let i = 0; i < elements.length; i++){
+        switch(elements[i].id){
+          case "home":
+            elements[i].innerHTML = `<i class="col-4 fas fa-home"></i>`
+            break
+          case "about":
+            elements[i].innerHTML = `<i class=" col-4 fas fa-portrait"></i>`
+            break
+          case "portfolio":
+            elements[i].innerHTML = `<i class=" col-4 fas fa-archive"></i>`
+            break
+          case "contact":
+          elements[i].innerHTML = `<i class=" col-4 fas fa-id-card"></i>`
+            break
+        }
+      }
+  }
+  // else{
+
+  // }
+});
+//////////////////////////////////////////////////////////////
+
 
 //Displays additional "About" information on button click 
 ///////////////////////////////////////////////////////////
