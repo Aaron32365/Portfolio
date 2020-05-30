@@ -192,7 +192,7 @@ function generatePortfolio(){
     let applicationButton = $(`<a target="_blank" href="${itemList[i].applicationUrl}">`)
 
     div.addClass("portfolio-item row")
-    imgDiv.addClass("portfolio-imgs col-sm-4")
+    imgDiv.addClass("portfolio-imgs col-9 col-md-4")
     descDiv.addClass("portfolio-desc col-sm-7")
     githubButton.addClass("portfolio-button githubButton")
     applicationButton.addClass("portfolio-button appButton")

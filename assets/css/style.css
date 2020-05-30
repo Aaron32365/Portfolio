@@ -24,7 +24,16 @@ a:hover{
     text-decoration: none !important;
     
 }
-/* media queries */
+/* media queries  /////////////////////////////////////////*/
+
+@media screen and (min-width: 370x) {
+    #intro #intro-main{
+        font-size: 1.5em !important;
+    }
+    #intro-sub{
+        font-size: 1.2em !important;
+    }
+  }
 
 @media screen and (max-width: 480px) {
     #intro #intro-main{
@@ -94,6 +103,23 @@ a:hover{
         size: 100% !important;
     }
   }
+
+  @media screen and (max-width: 1200px) {
+    #knowledge-Container{
+        margin-top: 140px !important;
+    }
+  }
+/* 
+  @media screen and (max-width: 768px) {
+    .portfolio-imgs{
+        margin-left: 40px !important;
+    }
+  } */
+
+  
+  
+
+  /* //////////////////////////////////////////////////////// */
 
 
 .containers{
@@ -176,6 +202,7 @@ a:hover{
 }
 
 #about-main{
+    padding-top: 18px;
     padding-left: 12px;
 }
 
@@ -265,6 +292,9 @@ i{
 }
 
 .headers{
+    padding-bottom: 24px;
+    text-overflow: clip;
+    font-size: 2em;
     border-bottom-style: solid;
     border-bottom-width: 2px;
     border-bottom-color: white;
@@ -294,15 +324,25 @@ i{
     height: fit-content;
 }
 
+.nav-item:hover{
+    opacity: .8;
+}
+
 .portfolio-imgs{
     border-style: solid;
     border-radius: 3px;
     border-color: white;
     border-width: 2px;
     margin: 22px;
+    object-fit: scale-down;
     min-height: 240px;
     background-size: 100% 100%;
+    
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
+
 
 .portfolio-desc{
     margin-top: 20px;
