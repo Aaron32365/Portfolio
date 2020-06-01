@@ -26,30 +26,33 @@ a:hover{
 }
 /* media queries  /////////////////////////////////////////*/
 
-@media screen and (min-width: 370x) {
+@media screen and (min-width: 480px) {
     #intro #intro-main{
-        font-size: 1.5em !important;
+        margin-top: -100px !important;
+        font-size: .6em !important;
     }
     #intro-sub{
-        font-size: 1.2em !important;
-    }
-  }
-
-@media screen and (max-width: 480px) {
-    #intro #intro-main{
-        font-size: 2em !important;
-    }
-    #intro-sub{
-        font-size: 1.8em !important;
+        font-size: 8em !important;
     }
   }
 
   @media screen and (max-width: 530px) {
     #intro #intro-main{
-        font-size: 2em !important;
+        font-size: 1.70em !important;
     }
     #intro-sub{
-        font-size: 1.8em !important;
+        font-size: 1.3em !important;
+    }
+  }
+
+  
+  @media screen and (max-width: 575px) {
+    #intro #intro-main{
+        margin-top: 0px !important;
+        font-size: 2.2em;
+    }
+    #intro-sub{
+        font-size: 1.4em !important;
     }
   }
 
@@ -67,16 +70,6 @@ a:hover{
     #intro #intro-main{
         margin-top: 100px !important;
         font-size: 2.2em !important;
-    }
-    #intro-sub{
-        font-size: 1.8em !important;
-    }
-  }
-
-  @media screen and (max-width: 575px) {
-    #intro #intro-main{
-        margin-top: 100px !important;
-        font-size: 2.2em;
     }
     #intro-sub{
         font-size: 1.8em !important;
@@ -109,6 +102,93 @@ a:hover{
         margin-top: 140px !important;
     }
   }
+
+  @media screen and (max-width: 590px) {
+    .nav-text{
+        display: none;
+    }
+    .nav-link{
+        display: inline-block;
+        overflow: scroll;
+        padding-left: auto !important;
+        padding-right: auto !important ;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .portfolio-desc-title{
+
+        font-size: 1.2em !important;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .buttons{
+        margin-bottom: 22px !important;
+        overflow: scroll;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .portfolio-button{
+        font-size: .8em !important;
+        height: auto;
+        width: auto;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .portfolio-imgs{
+        margin-top: 0px !important;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    #portfolio-header{
+        font-size: 3.2em !important;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    #portfolio-header{
+        font-size: 1.8em !important;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+    #contact-header{
+        font-size: 2.25em !important;
+    }
+  }
+
+  @media screen and (max-width: 330px) {
+    #contact-header{
+        font-size: 2em !important;
+    }
+  }
+
+  @media screen and (max-width: 578px) {
+    .form-container{
+        margin-left: 0px !important;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .img-fluid{
+        display: none !important;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    #status-container{
+        display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+  #emailBtn-container{
+      margin-left: 20%;
+    }
+  }
 /* 
   @media screen and (max-width: 768px) {
     .portfolio-imgs{
@@ -120,6 +200,12 @@ a:hover{
   
 
   /* //////////////////////////////////////////////////////// */
+  .portfolio-desc-title{
+    font-family: 'Press Start 2P';
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
 
 
 .containers{
@@ -224,6 +310,10 @@ a:hover{
     max-height: 475px;
     padding: 24px;
 }
+/* 
+#knowledge-header{
+    font-size: 2.8em;
+} */
 
 #knowledge{
     border-bottom-style: solid;
@@ -260,6 +350,7 @@ i{
     padding: 10px;
     text-align: center;
     font-size: 1.5em;
+    padding-bottom: 2px;
 }
 
 .arrow {
@@ -436,4 +527,8 @@ i{
 #emailBtn:hover{
     color: orange;
     opacity: .8;
+}
+
+#contact-header{
+    font-size: 3em;
 }
